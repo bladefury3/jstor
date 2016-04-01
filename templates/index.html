@@ -1,0 +1,46 @@
+{% extends "templates/master.html" %}
+
+{% block content %}
+<div class="expanded column row search-page">
+	<div class="row">
+		<div class="small-7 small-centered columns landing-login">
+			<h1>Journals, primary sources, and now <span>Books</span></h1>
+
+			<form action="/">
+				<label>					
+					<input required class="large" type="text" name="search" placeholder="Search. . .">
+				</label>							
+    		<input type="submit" class="expanded jstor-button button" value="Search">		    		        		
+			</form>
+
+			<a href="#landing-page" class="tour-button button">Take a Tour</a>
+			<span><i class="fa fa-angle-down"></i></span>
+		</div>
+	</div>
+</div>
+<div id="landing-page" class="expanded column row landing-page">
+	<div class="row">
+		<div class="small-5 columns landing-login">
+			<h1>Start Researching</h1>
+			<p>Researching can be complicated. Simplify it with JSTOR's Register & Read free of cost.</p>
+
+			<form action="">
+				<label>
+					email
+					<input required class="large" type="email" name="email" placeholder="learn@jstor.org">
+				</label>
+
+				<label>
+					password
+					<input required class="large" type="password" name="password">
+				</label>
+				<p class="terms">By clicking Sign up, I agree to the <a href="#">Terms of Service and Privacy Policy</a>.</p>
+		    <input type="submit" class="expanded button" value="Sign up for free">
+		    <p>or <a href="#">Sign In</a></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

@@ -14,12 +14,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import os
+import urllib
+
+
+import jinja2
 import webapp2
 
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.write('Hello world!')
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
 
+class MainHandler(webapp2.RequestHandler):
+  def get(self):
+  	template_values = {}
+  	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+
+  	self.response.write(template.render(template_values))
+
+class CategoryHandler(webapp2.RequestHandler):
+	def get(self):
+		template_values = {}
+		template = JINJA_ENVIRONMENT.get_template('templates/categories.html')
+		self.response.write(template.render(template_values))
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/categories', CategoryHandler)
 ], debug=True)

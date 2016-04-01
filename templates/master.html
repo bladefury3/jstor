@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JSTOR</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div data-sticky-container >
+  <div class="top-bar" data-sticky data-options="marginTop:0;">
+					<div class="top-bar-left">
+						<ul class="menu">
+							<li>
+								<a href="/"><img src="http://i.imgur.com/alCmsqX.png" alt="JSTOR Logo" class="logo"></a>
+							</li>					
+						</ul>	
+					</div>
+					<div class="top-bar-right">
+						<ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+							<li><a href="#">Home</a></li>							
+							<li>
+								<a href="#">Browse</a>
+								<ul class="menu vertical">
+									<li><a href="#">by Title</a></li>
+									<li><a href="#">by Categories</a></li>									
+								</ul>
+							</li>
+							<li><a href="#">Sign In</a></li>							
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">(0) Books Selected</a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</nav>
+	</header>
+	{% block content %}
+	
+	{% endblock %}
+
+	<footer class="row column">
+   <p>JSTOR is part of ITHAKA, a not-for-profit organization helping the academic community use digital technologies to preserve the scholarly record and to advance research and teaching in sustainable ways. © 2000-2016 ITHAKA. All Rights Reserved. JSTOR®, the JSTOR logo, JPASS®, and ITHAKA® are registered trademarks of ITHAKA.</p>
+  </footer>
+	
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/what-input.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "templates/master.html" %}
+
+{% block content %}
+
+<div id="landing-page" class="expanded column row landing-page">
+	<div class="row">
+		<div class="small-12 medium-5 large-5 columns landing-login">
+			<h1>Start Researching</h1>
+			<p>Researching can be complicated. Simplify it with JSTOR's Register & Read free of cost.</p>
+
+			<form action="javascript:void(0);">
+				<label>
+					email
+					<input required class="large" type="email" name="email" placeholder="learn@jstor.org">
+				</label>
+
+				<label>
+					password
+					<input required class="large" type="password" name="password">
+				</label>
+				<p class="terms">By clicking Sign up, I agree to the <a href="#">Terms of Service and Privacy Policy</a>.</p>
+		    <input type="submit" class="expanded button" value="Login">
+		    <p>or <a href="/register">Register</a></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

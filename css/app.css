@@ -6,6 +6,11 @@ footer p{
 	font-size: 10px;
 	margin: 10px;
 }
+footer ul li{
+	font-size: 12px;
+	padding: 5px 0px;
+
+}
 .jstor-button{
 	background: #9B2631;
 	border-radius: 4px;
@@ -35,6 +40,12 @@ footer p{
 	background-size: cover;
 	min-height: 600px;
 }
+.register-page{
+	background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 100%), url('https://images.unsplash.com/17/unsplash_527bf4b4ae00d_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6fb9e39fdd6473bcfa3ec21ea21e5715');
+	background-size: cover;
+	min-height: 600px;
+  box-shadow: inset 0 0 75px 0 #000;
+}
 .search-page .landing-login h1 span{
 	color: #9B2631;
 	text-transform: uppercase;
@@ -54,7 +65,10 @@ footer p{
 	margin-top: 200px;
 	color: white;
 }
-
+.landing-login label{	
+	color: white;
+	text-align: center
+}
 .tour-button{
 	text-align: center;
 	width: 200px;
@@ -122,6 +136,24 @@ footer p{
 	font-size: 10px;
 	margin-bottom: 5px;
 }
+.black-footer{
+	background: url('http://i.imgur.com/EPvTAcj.png');
+	background-color: rgba(51,51,51,1);
+  max-width: none;
+	padding: 20px;
+	color: wheat;
+	font-family: Montserrat;
+}
+.black-footer{
+	text-align: center;
+}
+.sticky-container{
+	/* Screen Shot 2016-04-04 at 4.20.48 PM: */
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.search-page-categories{
+	padding: 10px 0px 0px 0px;
+}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
     color:    white;
 }
@@ -133,4 +165,175 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
     color:    white;
+}
+.search-results-header{
+	/* Sony Laptops Are Sti: */
+font-family: Montserrat-Regular;
+font-size: 19.14px;
+color: #99242F;
+}
+.search-results-authors{
+	/* Authors: Shane Adkin: */
+	font-family: Montserrat-Regular;
+	font-size: 12.44px;
+	color: rgba(14,72,102,0.77);
+}
+.search-results-abstract{
+	/* All users on MySpace: */
+font-family: ArialMT;
+font-size: 12.44px;
+color: #000000;
+line-height: 18px;
+}
+.search-results-links a{
+	/* Add to shelf: */
+font-family: ArialMT;
+font-size: 12px;
+color: #99242F;
+}
+.search-page-related{
+	/* Rectangle 39: */
+	border: 0.25px solid #979797;
+	padding: 20px;
+	font-family: Montserrat-Regular;
+	text-align: center;
+}
+.search-page-related a{
+	/* asdf: */
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	color: #9E2834;
+}
+.single-search-result{
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.single-search-result p{
+	margin-bottom: 2px;
+}
+.current-page{
+	font-weight: bolder;
+}
+.categories-heading-1{
+	/* Categories: */
+	font-family: Montserrat-Regular;	
+	color: #99212E;
+	padding: 25px;
+}
+.category-info{
+	/* Rectangle 4: */
+	background: #F1F1F1;
+	min-height: 120px;	
+	max-height: 140px;
+	padding: 15px;
+	margin-top: -20px;
+}
+.categories-container .thumbnail{
+	border: 0px;
+ max-height: 250px;
+  width: 100%;
+}
+.category-info h4{
+	/* Geography: */
+	font-family: Montserrat-Regular;
+	font-size: 20px;
+	color: #000000;
+}
+.category-info p{
+	/* It was a humorously : */
+	font-family: Montserrat-Regular;
+	font-size: 12px;
+	color: #7E7E7E;
+	text-overflow: clip;
+}
+.single-category{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.landing-register{
+	margin-top: 50px;
+}
+.register-form label{
+	/* First Name: */
+	font-family: Montserrat-Regular;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.register-form input[type="text"], .register-form input[type="password"], .register-form input[type="email"]{
+	/* Rectangle 47: */
+	background: rgba(255,255,255,0.50);
+	border-radius: 3px;
+}
+.register-form .terms{
+	/* By signing up, you a: */
+	font-family: Helvetica;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.top-bar-right .menu .active > a, .top-bar-right .menu li > a:hover{
+	background-color: #9B2631;
+	border-radius: 4px;	
+}
+.top-bar-right .menu li > a:hover{
+	color:white;
+}
+
+.checkout{
+	min-height: 600px;
+}
+.black-footer .menu > li > a{
+	color: wheat;
+	font-weight: bold;
+  display: initial;
+  padding: 0px;
+  line-height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+	.register-page{
+	  background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 100%), url('https://images.unsplash.com/17/unsplash_527bf4b4ae00d_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6fb9e39fdd6473bcfa3ec21ea21e5715');	
+	}
+	.top-bar-right a{
+		font-size: 14px;
+		float: none;
+	}	
+	.search-page{
+		background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 100%), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=aff2bf56593d08c8fdda8de3eced4910');
+	}
+}
+
+@media screen and (max-width: 500px){
+	.register-page{
+	  background: black;
+	}	
+	.search-page{
+		background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=aff2bf56593d08c8fdda8de3eced4910');
+		min-height: 330px;
+	}
+	.search-page .landing-login{
+		margin-top: 50px;
+	}
+	.black-footer .columns{
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		padding: 10px 0px;
+	}
+	.landing-login p{
+		width: auto;
+		padding-bottom: 10px;
+	}
+	.landing-page label{
+		width: 100%;
+	}
+	.landing-page input[type="email"], .landing-page input[type="password"]{
+		width: 100%;
+		margin: 0px;
+	}
+	.landing-page input[type="submit"]{
+		width: 100%;
+		margin: 0;
+	}
+	.row .row{
+		margin: 0px;
+	}
 }

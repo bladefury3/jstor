@@ -1,0 +1,55 @@
+{% extends "templates/master.html" %}
+
+{% block content %}
+
+<div id="register-page" class="expanded column row register-page">
+	<div class="row">
+		<div class="small-12 medium-12 large-5 columns landing-login landing-register float-right ">
+			<h1>Register Now</h1>
+
+			<form action="javascript:void(0);" class="register-form">
+				<div class="row">
+					<div class="medium-6 columns">
+						<label>First Name
+							<input type="text" required placeholder="First Name">
+						</label>
+					</div>
+					<div class="medium-6 columns">
+						<label>Last Name
+							<input type="text" required placeholder="Last Name">
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-6 columns">
+						<label>Username
+							<input type="text" required placeholder="Username">
+						</label>
+					</div>
+					<div class="medium-6 columns">
+						<label>Email
+							<input type="email" required placeholder="Email">
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-6 columns">
+						<label>Password
+							<input type="password" required placeholder="Password">
+						</label>
+					</div>
+					<div class="medium-6 columns">
+						<label>Confirm Password
+							<input type="password" required placeholder="Confirm Password">
+						</label>
+					</div>
+				</div>			
+				<input type="submit" class="expanded button jstor-button" value="Register">				
+				<p class="terms">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
